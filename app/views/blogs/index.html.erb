@@ -1,8 +1,30 @@
-<h1>Portfolio Items</h1>
+<p id="notice"><%= notice %></p>
 
-<% @portfolio_item.each do |portfolio_item| %>
-  <p><%= portfolio_item.title %></p>
-  <p><%= portfolio_item.subtitle %></p>
-  <p> portfolio_item.body %></p>
-  <%#= image_tag portfolio_item.thumb_image %>
-<% end %>
+<h1>Blogs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+      <th colspan="4"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @blogs.each do |blog| %>
+      <tr>
+        <td><%= blog.title %></td>
+        <td><%= blog.body %></td>
+        <td><%#= link_to blog.status, toggle_status_blog_path(blog) %></td>
+        <td><%= link_to 'Show', blog %></td>
+        <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
+        <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Blog', new_blog_path %>
