@@ -1,17 +1,17 @@
 class Portfolio < ApplicationRecord
+  include Placeholder
   validates_presence_of :title, :body, :main_image, :thumb_image
-  
+
   def self.angular
     where(subtitle: 'Angular')
-  end  
-  
-  scope :ruby_on_rails, -> { where(subtitle: 'Ruby on rails') }
-  
-  after_initialize :set_defaults
-  
-  def set_defaults
-    self.main_image ||= "http://via.placeholder.com/855x363"
-    self.thumb_image ||= "http://via.placeholder.com/359x181"
-  end  
-end
+  end
 
+  scope :ruby_on_rails_portfolio_items, -> { where(subtitle: 'Ruby on Rails') }
+
+  after_initialize :set_defaults
+
+  def set_defaults
+    self.main_image ||= Placeholder.image_generator(height: '855', width: '363')
+    self.thumb_image ||= Placeholder.image_generator(height: '359', width: '181')
+  end
+end
