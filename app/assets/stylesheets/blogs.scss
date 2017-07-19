@@ -2,10 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body {
+/*body {
   background-color: SkyBlue;
 }
 
 .bottom a {
   color:blue;
+}
+*/
+body {
+  background: -webkit-linear-gradient(green, Coral, orange, DeepSkyBlue ); /* For Safari 5.1 to 6.0 */
 }
