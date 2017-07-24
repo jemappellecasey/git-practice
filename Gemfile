@@ -57,4 +57,4 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'devise', '~> 4.3'
 gem 'bootstrap', '~> 4.0.0.alpha6'
 
-gem 'black_view_tool', git: 'https://github.com/jemapplecasey/black_view_tool' 
+gem 'black_view_tool', '~> 0.1.0'
