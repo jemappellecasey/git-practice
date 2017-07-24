@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/jemapplecasey/black_view_tool
+  revision: e89b001cbb8573c3e117d5f838afa8d9f47a35bb
+  specs:
+    black_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -183,6 +189,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  black_view_tool!
   bootstrap (~> 4.0.0.alpha6)
   byebug
   coffee-rails (~> 4.2)
