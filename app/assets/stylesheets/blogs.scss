@@ -1,25 +1,10 @@
-// Place all the styles related to the Blogs controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
-/*body {
-  background-color: SkyBlue;
-}
-
-.bottom a {
-  color:blue;
-}
-
-
+/*
 body {
   background: -webkit-linear-gradient(green, Coral, orange, DeepSkyBlue );
 }
 */
 @import "bootstrap"; 
-
-/*
- * Globals
- */
+@import "font-awesome";
 
 @media (min-width: 48em) {
   html {
@@ -183,3 +168,11 @@ h6, .h6 {
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
+
+/*
+ * Custom styles
+ */
+ 
+ .social-links li {
+   font-size: 2.5em;
+ }
