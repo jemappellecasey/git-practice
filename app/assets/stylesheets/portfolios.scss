@@ -6,24 +6,18 @@
 
 .text-center {
   background: -webkit-linear-gradient(LightSkyBlue, DeepSkyBlue);
-  filter: grayscale(40%);
+  //filter: grayscale(40%);
 }
 
 body {
   background: DeepSkyBlue;
-  filter: grayscale(40%);
+  //filter: grayscale(40%);
 }
 
 html {
-  filter: grayscale(40%);
-  background-color: magenta;
+  background-color: #3eb1d7;
+  filter: grayscale(60%);
 }
-
-/*
-.top a {
-  color:red;
-}
-*/
 
 .row {
   padding-top: 4rem;
@@ -61,7 +55,7 @@ html {
   padding-top: 3rem;
   padding-bottom: 3rem;
   background: -webkit-linear-gradient(#292b2c, LightSkyBlue);
-  filter: grayscale(40%);
+  //filter: grayscale(40%);
 }
 
 .card {
@@ -85,9 +79,15 @@ footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
   background: -webkit-linear-gradient(LightSkyBlue, DeepSkyBlue);
-  filter: grayscale(40%);
+  //filter: grayscale(40%);
 }
 
 footer p {
   margin-bottom: .25rem;
+}
+
+//Custom styles 
+
+.portfolio-form {
+  padding:20px;
 }
