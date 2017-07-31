@@ -1,13 +1,13 @@
 ready = undefined
 set_positions = undefined
 
-set_positions = -> 
-  $('.card').each (i) -> 
+set_positions = ->
+  $('.card').each (i) ->
     $(this).attr 'data-pos', i + 1
     return
-  return  
+  return
 
-ready = -> 
+ready = ->
   set_positions()
   $('.sortable').sortable()
   $('.sortable').sortable().bind 'sortupdate', (e, ui) ->
@@ -16,13 +16,13 @@ ready = ->
     $('.card').each (i) ->
       updated_order.push
         id: $(this).data('id')
-        position: 1 + 1
+        position: i + 1
       return
     $.ajax
       type: 'PUT'
       url: '/portfolios/sort'
       data: order: updated_order
     return
-  return 
+  return
 
-$(document).ready ready  
+$(document).ready ready
