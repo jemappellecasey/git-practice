@@ -29,7 +29,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #292b2c;
+  //background-color: #292b2c;
 }
 body {
   color: #fff;
@@ -192,3 +192,24 @@ body {
   margin-left: 20px;
   margin-right: 20px;
 }
+
+#background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: image-url('ice-cubes-2508958_960_720.jpg') no-repeat;
+  background-size: cover;
+}
+
+/*
+.app-footer {
+  color: white;
+}
+*/

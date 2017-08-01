@@ -18,7 +18,16 @@
     <div class="site-wrapper">
       <div class="site-wrapper-inner">
         <div class="cover-container">
-
+          
+          <%= video_tag(
+              'Aflame.mp4',
+              id: 'background',
+              autoplay: true,
+              loop: true,
+              muted: true,
+              poster: 'ice-cubes-2508958_960_720.jpg'
+            )
+            %>
 
         <%= render "shared/application_nav" %>
 
