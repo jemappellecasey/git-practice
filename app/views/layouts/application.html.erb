@@ -28,16 +28,16 @@
             )
             %>
 
-          <%= render "shared/application_nav" %>
+        <%= render "shared/application_nav" %>
 
-          <%= yield %>
+        <%= yield %>
+    
+        <%= render "shared/application_footer" %>
+        
+        <%= alerts %>
 
-          <%= render "shared/application_footer" %>
-
-          <%= render 'shared/alerts' %>
-
-          <%= source_helper("application") %>
-
+        <%= source_helper("application") %>
+    
         </div>
       </div>
     </div>

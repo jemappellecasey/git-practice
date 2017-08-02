@@ -1,0 +1,2 @@
+class Polt < ApplicationRecord
+end
