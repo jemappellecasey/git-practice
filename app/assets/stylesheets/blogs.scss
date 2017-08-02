@@ -160,6 +160,7 @@ h6, .h6 {
  */
 
 .blog-footer {
+  margin-top:20px;
   padding: 2.5rem 0;
   color: #999;
   text-align: center;
@@ -182,16 +183,15 @@ body {
   background: -webkit-linear-gradient(#f5f5f5, #f5f5f5, #c9f3e9);
 }
 
-/*
-.col-md-11 {
-  color:#9f43b9;
-  filter: grayscale(0%);
-  opacity: 1;
+.comment-card > .card {
+  margin-top:20px;
 }
 
-.card-block {
-  background:-webkit-linear-gradient(left top, #005c45, #ffb600);
-  filter: grayscale(40%);
-  opacity: 0.5;
+.comment-attribution {
+  font-size: .8em;
+  font-style: italic;
 }
-*/
+
+.comment-name {
+  font-weight: 700;
+}
