@@ -1,0 +1,7 @@
+<% if flash[:alert] %>
+  <%= js add_gritter(flash[:alert], title: "You are", sticky: false, time: 1750) %>
+<% elsif flash[:error] %>
+  <%= js add_gritter(flash[:error], title: "Casey Black Portfolio", sticky: false, time: 1750) %>
+<% elsif flash[:notice] %>
+  <%= js add_gritter(flash[:notice], title: "You are", sticky: false, time: 1750) %>
+<% end %>
