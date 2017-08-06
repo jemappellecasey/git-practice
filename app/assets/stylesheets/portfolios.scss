@@ -13,8 +13,18 @@
 }
 
 body {
+  font-family: 'Dosis', sans-serif;
   background: DeepSkyBlue;
-  //filter: grayscale(40%);
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Electrolize', sans-serif;
+  font-weight: medium;
 }
 
 html {
@@ -63,7 +73,7 @@ html {
 
 .card {
   float: left;
-  width: 33.333%;
+  width: 100%;
   padding: .75rem;
   margin-bottom: 2rem;
   opacity: 0.5;
@@ -93,4 +103,19 @@ footer p {
 
 .portfolio-container {
   padding-top:30px;
+}
+
+.new-portfolio-item {
+  background-color: #393d40;
+}
+
+.alert {
+  color:#acb2b5;
+  background-color:#303234;
+}
+
+.btn-info {
+    color: #ccb18b;
+    background-color: #35383a;
+    border-color: #f5f3f1;
 }

@@ -26,16 +26,31 @@ a:hover {
 /*
  * Base structure
  */
+ 
+ 
+
+
+
 
 html,
 body {
   height: 100%;
-  //background-color: #292b2c;
+  
 }
 body {
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+  font-family: 'Dosis', sans-serif;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Electrolize', sans-serif;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -170,7 +185,7 @@ body {
      background: -webkit-linear-gradient(green, Coral, orange, DeepSkyBlue );
      filter: grayscale(90%);
      color: black;
-     text-align:left;
+     width: 100%;
  }
  
  .auth-links a {
@@ -214,4 +229,26 @@ body {
   color: white;
 }
 */
+
+.app-card-container {
+  color: black;
+  margin-left: 0px;
+  opacity: 0.95; 
+}
+
+.app-card-container > .card {
+  padding: 10px 5px 2px 20px;
+}
+
+.pic {
+  opacity: 1;
+  border: 1px solid #a8a8a8;
+}
+.app-card-container a {
+  color: #183ab9;
+}
+
+.skill {
+  margin: 15px 0px 15px 0px;
+}
 
