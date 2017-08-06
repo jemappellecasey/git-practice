@@ -215,3 +215,20 @@ body {
 }
 */
 
+.app-card-container {
+  color: black;
+  margin-left: 0px;
+  opacity: 0.95; 
+}
+
+.app-card-container > .card {
+  padding: 40px;
+}
+
+.pic {
+  opacity: 1;
+  border: 1px solid #a8a8a8;
+}
+.app-card-container a {
+  color: #183ab9;
+}
