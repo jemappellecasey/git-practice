@@ -5,58 +5,72 @@
     <hr>
     
     <div class="row">
-      <div class="col-md-6">
-          <%= image_tag "profile.jpg", width: 300, alt: "Profile Image", class: 'pic' %>
+      <div class="col-md-4">
+        <%= image_tag "profile.jpg", width: 300, alt: "Profile Image", class: 'pic' %>
+          
+        <div class="skills">
+          <% @skills.each do |skill| %>
+            <div class="skill">
+              <h4><%= skill.title %></h4>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-warning"
+                     role="progressbar"
+                     aria-valunow="<% skill.percent_utilized %>"
+                     aria-valumax="100"
+                     style="width: <%= skill.percent_utilized %>%"
+                     >
+                </div>
+              </div>
+            </div>
+          <% end %>
+        </div>
       </div>
       
-      <div class="col-md-6">
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
+      
+      <div class="col-md-8">
+
         <p>There's not much to know</p>
-        <button
-          class="btn btn-secondary"
-          type="button"
-          data-toggle="collapse"
-          data-target="#education"
-          aria-expanded="false"
-          aria-controler="education"
-        >
-          Education
-        </button>
+          <button
+            class="btn btn-secondary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#education"
+            aria-expanded="false"
+            aria-controler="education"
+          >
+            Education
+          </button>
+  
+          <button
+            class="btn btn-secondary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#jobHistory"
+            aria-expanded="false"
+            aria-controler="jobHistory"
+          >
+            Job History
+          </button>
+        </p>
 
-        <button
-          class="btn btn-secondary"
-          type="button"
-          data-toggle="collapse"
-          data-target="#jobHistory"
-          aria-expanded="false"
-          aria-controler="jobHistory"
-        >
-          Job History
-        </button>
-      </p>
-
-      <p>
-        <div class="collapse" id="education">
-          <div class="card card-block">
-            <h2>Code to sucess</h2>
-            
-            <p>Over the summer I enrolled in a fantastic program, Code to sucess.  This was my first introduction into the world of codding and it was as intence as it was rigorous.</p>
-            <p></p>
-            <p>   This 8 week program introduced me to Ruby on Rails. </p>
+        <p>
+          <div class="collapse" id="education">
+            <div class="card card-block">
+              <h2>Code to sucess</h2>
+              
+              <p>Over the summer I enrolled in a fantastic program, Code to sucess.  This was my first introduction into the world of codding and it was as intence as it was rigorous.</p>
+              <p></p>
+              <p>   This 8 week program introduced me to Ruby on Rails. </p>
+            </div>
           </div>
-        </div>
         
-        <div class="collapse" id="jobHistory">
-          <div class="card card-block">
-            I have not yet had a coding related job.
+          <div class="collapse" id="jobHistory">
+            <div class="card card-block">
+              I have not yet had a coding related job.
+            </div>
           </div>
-        </div>
-      </p>
+        </p>
+      </div>
     </div>
   </div>
 </div>
