@@ -9,18 +9,54 @@
           <%= image_tag "profile.jpg", width: 300, alt: "Profile Image", class: 'pic' %>
       </div>
       
-      <div class="col-md-4.5">
+      <div class="col-md-6">
         <p></p>
         <p></p>
         <p></p>
         <p></p>
         <p></p>
         <p></p>
-        <p>You need not know anything about me</p>
-      </div>
-      
-      <div class="col-md-1.5">
-      </div>  
+        <p>There's not much to know</p>
+        <button
+          class="btn btn-secondary"
+          type="button"
+          data-toggle="collapse"
+          data-target="#education"
+          aria-expanded="false"
+          aria-controler="education"
+        >
+          Education
+        </button>
+
+        <button
+          class="btn btn-secondary"
+          type="button"
+          data-toggle="collapse"
+          data-target="#jobHistory"
+          aria-expanded="false"
+          aria-controler="jobHistory"
+        >
+          Job History
+        </button>
+      </p>
+
+      <p>
+        <div class="collapse" id="education">
+          <div class="card card-block">
+            <h2>Code to sucess</h2>
+            
+            <p>Over the summer I enrolled in a fantastic program, Code to sucess.  This was my first introduction into the world of codding and it was as intence as it was rigorous.</p>
+            <p></p>
+            <p>   This 8 week program introduced me to Ruby on Rails. </p>
+          </div>
+        </div>
+        
+        <div class="collapse" id="jobHistory">
+          <div class="card card-block">
+            I have not yet had a coding related job.
+          </div>
+        </div>
+      </p>
     </div>
   </div>
 </div>
